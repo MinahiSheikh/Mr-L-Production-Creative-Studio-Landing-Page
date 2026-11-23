@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mr. L Production — Creative Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Header / Navbar -->
+  <header class="site-header" id="top">
+    <div class="container nav-wrapper">
+      <a href="#top" class="brand-logo" aria-label="Mr. L Production Home">
+        <span class="logo-mark">ML</span>
+        <span class="logo-text">Mr. L Production</span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#top" class="nav-item active">Home</a>
+        <a href="#about" class="nav-item">About</a>
+        <a href="#services" class="nav-item">Services</a>
+        <a href="#projects" class="nav-item">Portfolio</a>
+        <a href="#process" class="nav-item">Process</a>
+        <a href="#contact" class="nav-item">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button type="button" class="pill-btn pill-outline open-contact-btn">
+          Get in Touch <span class="arrow-shift">&rarr;</span>
+        </button>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <p class="eyebrow"><span class="eyebrow-line"></span> CREATIVE STUDIO</p>
+          <h1 class="hero-title">MAKE<br />IDEAS<br />MOVE.</h1>
+          <p class="hero-sub">
+            A creative studio turning bold ideas into powerful digital experiences.
+          </p>
+          <div class="hero-cta-group">
+            <a href="#projects" class="pill-btn pill-orange">
+              Explore Our Work <span class="arrow-shift">&rarr;</span>
+            </a>
+            <button type="button" class="reel-btn" id="watchReelBtn">
+              <span class="play-circle">&#9654;</span>
+              <span>Watch Reel</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal delay-1">
+          <img id="heroSlideImg" src="hero.jpg" alt="Creative studio visual with orange light trails" />
+          <div class="hero-img-shade"></div>
+          <button type="button" class="slide-indicator" id="heroSlideBtn" aria-label="Switch Hero Slide">
+            <span class="slide-num" id="slideNum">01</span>
+            <span class="slide-total">03</span>
+            <span class="slide-track"><i class="slide-fill" id="slideFill"></i></span>
+            <span class="slide-arrow">&darr;</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Studio Section -->
+    <section class="about-section" id="about">
+      <div class="container about-grid">
+        <div class="about-media reveal">
+          <img src="about.jpg" alt="Person walking toward a glowing orange sun" />
+          <span class="media-badge"><i class="dot"></i> About Studio</span>
+        </div>
+
+        <div class="about-content reveal delay-1">
+          <div class="about-top-row">
+            <div>
+              <p class="eyebrow"><span class="eyebrow-line"></span> ABOUT MR. L PRODUCTION</p>
+              <h2 class="section-heading">
+                We are a creative agency that believes in the power of <span class="text-orange">imagination.</span>
+              </h2>
+            </div>
+            <span class="asterisk-mark" aria-hidden="true">&#10033;</span>
+          </div>
+
+          <p class="body-copy">
+            We craft stunning visuals, build meaningful brands, and create digital experiences that inspire, engage, and
+            make an impact.
+          </p>
+
+          <div class="stats-row" id="statsSection">
+            <div class="stat-item">
+              <strong class="stat-value" data-target="50" data-suffix="+">0+</strong>
+              <span class="stat-label">Projects Completed</span>
+            </div>
+            <div class="stat-item">
+              <strong class="stat-value" data-target="30" data-suffix="+">0+</strong>
+              <span class="stat-label">Happy Clients</span>
+            </div>
+            <div class="stat-item">
+              <strong class="stat-value" data-target="100" data-suffix="%">0%</strong>
+              <span class="stat-label">Creative Focus</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section" id="services">
+      <div class="container services-grid">
+        <div class="services-intro reveal">
+          <p class="eyebrow"><span class="eyebrow-line"></span> OUR SERVICES</p>
+          <h2 class="section-heading">
+            From concept to creation &mdash; <span class="text-orange">we do it all.</span>
+          </h2>
+          <button type="button" class="pill-btn pill-outline open-contact-btn" data-service="Full Studio Package">
+            View All Services <span class="arrow-shift">&rarr;</span>
+          </button>
+        </div>
+
+        <div class="services-cards">
+          <article class="service-card reveal" data-title="Branding & Identity"
+            data-desc="Complete visual identity systems, brand strategy, typography, logo architecture, and print/digital guidelines built to stand out.">
+            <img src="service1.jpg" alt="Branding and Identity" />
+            <div class="service-overlay">
+              <span class="card-icon">&#9673;</span>
+              <div class="service-text">
+                <h3>Branding &amp; Identity</h3>
+                <p>Build a brand that stands out.</p>
+              </div>
+              <button type="button" class="card-arrow open-detail-btn" aria-label="Branding details">&rarr;</button>
+            </div>
+          </article>
+
+          <article class="service-card reveal delay-1" data-title="Web Design & Development"
+            data-desc="Custom responsive websites, interactive UI/UX prototypes, high-converting landing pages, and smooth frontend animations.">
+            <img src="service2.jpg" alt="Web Design and Development" />
+            <div class="service-overlay">
+              <span class="card-icon">&#9678;</span>
+              <div class="service-text">
+                <h3>Web Design &amp; Development</h3>
+                <p>Create digital experiences.</p>
+              </div>
+              <button type="button" class="card-arrow open-detail-btn" aria-label="Web Design details">&rarr;</button>
+            </div>
+          </article>
+
+          <article class="service-card reveal delay-2" data-title="Motion Graphics & Video"
+            data-desc="3D product visuals, brand showreels, kinetic typography, and high-impact commercial motion edits that bring ideas to life.">
+            <img src="service3.jpg" alt="Motion Graphics and Video" />
+            <div class="service-overlay">
+              <span class="card-icon">&#9673;</span>
+              <div class="service-text">
+                <h3>Motion Graphics &amp; Video</h3>
+                <p>Bring ideas to life.</p>
+              </div>
+              <button type="button" class="card-arrow open-detail-btn"
+                aria-label="Motion Graphics details">&rarr;</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Selected Projects Section -->
+    <section class="projects-section" id="projects">
+      <div class="container">
+        <div class="projects-header reveal">
+          <div>
+            <p class="eyebrow"><span class="eyebrow-line"></span> SELECTED PROJECTS</p>
+            <h2 class="section-heading">
+              Ideas<br />We've Brought<br /><span class="text-orange">to Life.</span>
+            </h2>
+          </div>
+
+          <div class="carousel-controls">
+            <button type="button" class="circle-btn" id="prevProjectBtn" aria-label="Previous project">&larr;</button>
+            <button type="button" class="circle-btn" id="nextProjectBtn" aria-label="Next project">&rarr;</button>
+          </div>
+        </div>
+
+        <div class="projects-grid" id="projectsGrid">
+          <article class="project-card reveal" data-title="Visual Identity — Solar Horizon"
+            data-desc="Brand identity, packaging system, and art direction crafted for a contemporary lifestyle & design label.">
+            <img src="project-1.jpg" alt="Visual Identity Project" />
+            <div class="project-footer">
+              <div>
+                <h3>Visual Identity</h3>
+                <span>Branding</span>
+              </div>
+              <button type="button" class="mini-arrow open-detail-btn" aria-label="Open Visual Identity">&rarr;</button>
+            </div>
+          </article>
+
+          <article class="project-card reveal delay-1" data-title="Digital Experience — Apex GT"
+            data-desc="Interactive automotive showcase featuring smooth scroll choreography, dark glassmorphic UI, and 3D lighting.">
+            <img src="project-2.jpg" alt="Digital Experience Project" />
+            <div class="project-footer">
+              <div>
+                <h3>Digital Experience</h3>
+                <span>Web Design</span>
+              </div>
+              <button type="button" class="mini-arrow open-detail-btn"
+                aria-label="Open Digital Experience">&rarr;</button>
+            </div>
+          </article>
+
+          <article class="project-card reveal delay-2" data-title="Creative Campaign — Ember Pulse"
+            data-desc="Multi-platform visual campaign blending surreal portraiture, dynamic light trails, and motion assets.">
+            <img src="p3.jpg" alt="Creative Campaign Project" />
+            <div class="project-footer">
+              <div>
+                <h3>Creative Campaign</h3>
+                <span>Motion Graphics</span>
+              </div>
+              <button type="button" class="mini-arrow open-detail-btn"
+                aria-label="Open Creative Campaign">&rarr;</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process-section" id="process">
+      <div class="container process-grid">
+        <div class="process-visual reveal">
+          <img src="ring.jpg" alt="3D abstract ring with orange glow" />
+        </div>
+
+        <div class="process-right reveal delay-1">
+          <p class="eyebrow"><span class="eyebrow-line"></span> OUR PROCESS</p>
+          <h2 class="section-heading">
+            A Simple Process.<br /><span class="text-orange">A Big Impact.</span>
+          </h2>
+
+          <div class="process-steps">
+            <div class="step-item">
+              <span class="step-badge">01</span>
+              <div>
+                <h3>Discover</h3>
+                <p>We understand your vision and goals.</p>
+              </div>
+            </div>
+
+            <div class="step-item">
+              <span class="step-badge">02</span>
+              <div>
+                <h3>Create</h3>
+                <p>We bring ideas to life with creativity.</p>
+              </div>
+            </div>
+
+            <div class="step-item">
+              <span class="step-badge">03</span>
+              <div>
+                <h3>Deliver</h3>
+                <p>You get exceptional results.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Dark CTA Banner -->
+    <section class="cta-banner-section" id="contact">
+      <div class="container">
+        <div class="cta-banner reveal">
+          <div class="cta-text">
+            <h2>Let's Create Something <span class="text-orange">Extraordinary</span> Together.</h2>
+            <p>Have a project in mind? Let's turn your ideas into reality.</p>
+          </div>
+          <button type="button" class="pill-btn pill-orange open-contact-btn">
+            Get in Touch <span class="arrow-shift">&rarr;</span>
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-top">
+      <a href="#top" class="brand-logo">
+        <span class="logo-mark">ML</span>
+        <span class="logo-text">Mr. L Production</span>
+      </a>
+
+      <nav class="footer-nav">
+        <a href="#top">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#projects">Portfolio</a>
+        <a href="#process">Process</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="social-row">
+        <a href="https://x.com" target="_blank" rel="noopener" aria-label="X">X</a>
+        <a href="https://youtube.com" target="_blank" rel="noopener" aria-label="YouTube">&#9654;</a>
+        <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram">&#9678;</a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <span>&copy; 2026 Mr. L Production. All rights reserved.</span>
+      <span class="credit-text">Designed and developed by <strong>Minahil Sheikh</strong></span>
+    </div>
+  </footer>
+
+  <!-- Showreel Modal -->
+  <div class="modal-backdrop" id="reelModal" aria-hidden="true">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3>Mr. L Production — 2026 Showreel</h3>
+        <button type="button" class="close-modal" data-close-modal aria-label="Close modal">&times;</button>
+      </div>
+      <div class="reel-preview-box">
+        <img src="hero.jpg" alt="Showreel cover" />
+        <div class="reel-preview-caption">
+          <span class="pill-badge">01:24 HD REEL</span>
+          <p>Branding &bull; Web Experiences &bull; 3D Motion</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Service / Project Detail Modal -->
+  <div class="modal-backdrop" id="detailModal" aria-hidden="true">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 id="detailModalTitle">Project Details</h3>
+        <button type="button" class="close-modal" data-close-modal aria-label="Close modal">&times;</button>
+      </div>
+      <p class="body-copy" id="detailModalDesc"></p>
+      <div class="modal-footer-actions">
+        <button type="button" class="pill-btn pill-orange" id="detailInquireBtn">
+          Start Similar Project <span>&rarr;</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact / Get in Touch Modal -->
+  <div class="modal-backdrop" id="contactModal" aria-hidden="true">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3>Start a Project</h3>
+        <button type="button" class="close-modal" data-close-modal aria-label="Close modal">&times;</button>
+      </div>
+      <form id="contactForm" class="contact-form">
+        <div class="form-group">
+          <label for="clientName">Your Name</label>
+          <input type="text" id="clientName" required placeholder="e.g. Ali Raza" />
+        </div>
+        <div class="form-group">
+          <label for="clientEmail">Email Address</label>
+          <input type="email" id="clientEmail" required placeholder="you@example.com" />
+        </div>
+        <div class="form-group">
+          <label for="projectType">Service Needed</label>
+          <select id="projectType">
+            <option value="Branding & Identity">Branding &amp; Identity</option>
+            <option value="Web Design & Development">Web Design &amp; Development</option>
+            <option value="Motion Graphics & Video">Motion Graphics &amp; Video</option>
+            <option value="Full Studio Package">Full Studio Package</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="projectBrief">Project Brief</label>
+          <textarea id="projectBrief" rows="3" required
+            placeholder="Tell us about your idea, timeline, and goals..."></textarea>
+        </div>
+        <button type="submit" class="pill-btn pill-orange full-width">
+          Send Inquiry <span>&rarr;</span>
+        </button>
+        <p class="form-status" id="formStatus" role="status"></p>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
